@@ -1,7 +1,14 @@
 .container{
     margin-top: 2rem !important;
-    background-color: #c000ff69;
+    background-color: #8aeec0;
 }
 nav{
-    background-color: #08175d;
+    background-color: #ffffff;
+}
+.navbar-toggler{
+    background-color: #52ab98;
+    color: black;
+}
+body{
+    background-color: #c8d8e4;
 }
