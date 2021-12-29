@@ -240,12 +240,3 @@ dark.addEventListener('click',()=>{
     }
 });
 
-// dark.addEventListener('click',()=>{
-//     if(dark.innerText.includes('Light Mode'))
-//     {
-//     let bodi=document.getElementsByTagName('body');
-//     bodi[0].setAttribute('style','background-color: #c8d8e4;');
-//     dark.innerText='Dark Mode';
-//     console.log("light");
-//     }
-// });
