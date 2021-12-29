@@ -12,3 +12,21 @@ nav{
 body{
     background-color: #c8d8e4;
 }
+#heading{
+    width: 40vw;
+    cursor: pointer;
+}
+h5{
+    color: #42a5f5;
+}
+.card-text,#addTxt{
+    color: #5e35b1;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+#widt{
+    width: 10rem;
+}
