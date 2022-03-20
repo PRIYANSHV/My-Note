@@ -1,12 +1,12 @@
 .container{
     margin-top: 2rem !important;
-    background-color: #8aeec0;
+    background-color: #2ba9e4;
 }
 nav{
     background-color: #ffffff;
 }
 .navbar-toggler{
-    background-color: #52ab98;
+    background-color: #22e2b9;
     color: black;
 }
 body{
@@ -26,7 +26,17 @@ h5{
     position: sticky;
     top: 0;
     z-index: 2;
+    background-color: black;
 }
 #widt{
     width: 10rem;
+}
+#relpos{
+    position: sticky;
+    top: 65px;
+    border-radius: 198px;
+}
+
+.defaultc{
+    color: white;
 }

@@ -216,7 +216,7 @@ dark.addEventListener('click',()=>{
     //dark.setAttribute('style','background-color: #131417;');
     let cards=document.getElementsByClassName('card-body');
     Array.from(cards).forEach(element=>{
-        element.setAttribute('style','background-color: #131417;');
+        element.setAttribute('style','background-color: #ffffff;');
     });
    
     let cont=document.querySelector('.container');
@@ -240,3 +240,53 @@ dark.addEventListener('click',()=>{
     }
 });
 
+// dark.addEventListener('click',()=>{
+//     if(dark.innerText.includes('Light Mode'))
+//     {
+//     let bodi=document.getElementsByTagName('body');
+//     bodi[0].setAttribute('style','background-color: #c8d8e4;');
+//     dark.innerText='Dark Mode';
+//     console.log("light");
+//     }
+// });
+
+//Theme Changin
+
+const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+const themBtn = document.getElementById("relpos")
+const cont = document.getElementById("mycont")
+const navB= document.getElementById("navCol")
+const Darkm = document.getElementById("widt");
+
+themBtn.addEventListener("click",()=>{
+    let hexColor = "#",bodColor="#",navC="#";
+    for(let i=0;i<6;i++)
+    {
+        hexColor+=hex[getRandumNum()];
+        bodColor+=hex[getRandumNum()];
+        navC+=hex[getRandumNum()];
+    }
+
+    document.body.style.backgroundColor = bodColor;
+    cont.style.backgroundColor = hexColor;
+    navB.style.backgroundColor = navC;
+    Darkm.style.backgroundColor = bodColor;
+
+    localStorage.setItem('bodyColor', bodColor);
+    localStorage.setItem('contColor', hexColor);
+    localStorage.setItem('navColor', navC);
+    
+})
+
+const getRandumNum = ()=>{
+    return Math.floor(Math.random()*hex.length);
+}
+
+const func =(arg,col)=>{
+    arg.style.backgroundColor=col;
+}
+
+func(document.body,localStorage.getItem('bodyColor'))
+func(cont,localStorage.getItem('contColor'));
+func(navB,localStorage.getItem('navColor'));
+func(Darkm,localStorage.getItem('bodyColor'));
